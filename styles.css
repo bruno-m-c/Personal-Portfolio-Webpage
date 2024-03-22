@@ -1,1 +1,27 @@
+#replace-me {
+    color: #4353FF;
+  }
+  
+  
+  #replace-me:after {
+    content: "";
+    animation: spin 12s linear;
+    /* loop */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-play-state: running;
+  }
+  
+  @keyframes spin {
+    0% {
+      content: "Software Engineer";
+    }
+    50% {
+      content: "Mechanical Engineer";
+    }
+    100% {
+      content: "Quality Engineer";
+    }
+  }
+  
 
