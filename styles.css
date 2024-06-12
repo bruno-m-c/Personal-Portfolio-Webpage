@@ -1,5 +1,5 @@
 #replace-me {
-    color: #4353FF;
+    color: var(--main-orange);
   }
   
   
@@ -27,8 +27,7 @@
 /* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
+  --main-orange: #c05910;
   --main-gray: #303841;
 }
 
@@ -132,15 +131,20 @@ img {
 }
 .Cassie {
   display: block;
-  width:30%;
+  width: 40%;
+  min-width: 30rem;
+  max-width: 50%;
   padding-top: 6rem;
   border-radius: 50%;
-  max-width: 50%;
   height: auto;
 }
+
 p {
   text-align: center;
   font-size: 3rem;
+}
+.color {
+  color: var(--main-gray);
 }
 /* nav */
 
@@ -151,7 +155,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: var(--main-orange);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -178,7 +182,7 @@ p {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--main-white);
 }
 
 /* Welcome section */
@@ -201,7 +205,7 @@ p {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--main-white);
 }
 
 .projects-section-header {
@@ -344,7 +348,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+  border-top: 4px solid var(--main-orange);
 }
 
 footer > p {
