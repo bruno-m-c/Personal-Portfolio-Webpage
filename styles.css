@@ -129,6 +129,17 @@ img {
   display: block;
   width: 100%;
 }
+
+.Capybara {
+  mix-blend-mode: ;
+  display: block;
+  width: 40%;
+  min-width: 30rem;
+  max-width: 50%;
+  padding-top: 6rem;
+  height: auto;
+}
+/* Not in use
 .Cassie {
   display: block;
   width: 40%;
@@ -137,7 +148,7 @@ img {
   padding-top: 6rem;
   border-radius: 50%;
   height: auto;
-}
+}*/
 
 p {
   text-align: center;
