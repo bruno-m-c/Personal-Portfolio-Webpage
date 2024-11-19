@@ -55,41 +55,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
 
 /* Base styles */
 
@@ -124,29 +89,13 @@ a {
   color: var(--main-white);
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 .Capybara {
-  display: block;
   width: 60%;
   min-width: 30rem;
   max-width: 70%;
   padding-top: 6rem;
   height: auto;
 }
-/* Not in use
-.Cassie {
-  display: block;
-  width: 40%;
-  min-width: 30rem;
-  max-width: 50%;
-  padding-top: 6rem;
-  border-radius: 50%;
-  height: auto;
-}*/
 
 p {
   text-align: center;
@@ -172,16 +121,6 @@ p {
 .nav-list {
   display: flex;
   margin-right: 2rem;
-}
-
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
 }
 
 .nav-list a {
@@ -264,12 +203,6 @@ p {
   margin-bottom: 5rem;
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
 /* "Automagic" image grid using no media queries */
 .projects-grid {
   display: grid;
@@ -279,16 +212,6 @@ p {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
-}
-
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .project {
@@ -361,12 +284,6 @@ p {
   font-size: 6rem;
 }
 
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
-}
-
 .contact-section-header > p {
   font-style: italic;
 }
@@ -409,10 +326,72 @@ footer i {
   vertical-align: middle;
 }
 
-@media (max-width: 28.75em) {
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 30.625em) {
+  html {
+    font-size: 55%;
+  }
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-section-header {
+    font-size: 4rem;
+  }
+
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
   footer {
     flex-direction: column;
     text-align: center;
   }
 }
-
