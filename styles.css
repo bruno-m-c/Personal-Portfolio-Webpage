@@ -1,5 +1,5 @@
 #replace-me {
-    color: var(--main-orange);
+    color: var(--main-green);
   }
   
   
@@ -27,7 +27,7 @@
 /* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
-  --main-orange: #206407;
+  --main-green: #206407;
   --main-gray: #303841;
 }
 
@@ -113,7 +113,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-orange);
+  background: var(--main-green);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -142,7 +142,6 @@ p {
   align-items: center;
   width: 100%;
   height: 88rem;
-  background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   padding: 0 3%;
 }
@@ -226,7 +225,7 @@ p {
 }
 
 .project:hover .code {
-  color: var(--main-orange);
+  color: var(--main-green);
 }
 
 .project-image {
@@ -246,25 +245,6 @@ p {
   border-radius: 2px;
 }
 
-.btn-show-all {
-  font-size: 2rem;
-  background: var(--main-gray);
-  transition: background 0.3s ease-out;
-}
-
-.btn-show-all:hover {
-  background: var(--main-red);
-}
-
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
-
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
 
 /* Contact section */
 
@@ -282,10 +262,6 @@ p {
 
 .contact-section-header > h2 {
   font-size: 6rem;
-}
-
-.contact-section-header > p {
-  font-style: italic;
 }
 
 .contact-links {
@@ -315,7 +291,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: var(--main-gray);
-  border-top: 4px solid var(--main-orange);
+  border-top: 4px solid var(--main-green);
 }
 
 footer > p {
@@ -372,6 +348,7 @@ footer i {
   .welcome-section {
     display: flex;
     flex-direction: column;
+    padding: 30% 3% 0;
   }
 
   .projects-section-header {
